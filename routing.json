@@ -1,0 +1,52 @@
+{
+	"Name": "AutoRouting",
+  	"GlobalProxy": "true",
+  	"UseChunkFiles": "true",
+  	"RemoteDns": "8.8.8.8",
+  	"DomesticDns": "77.88.8.8",
+  	"RemoteDNSType": "DoH",
+  	"RemoteDNSDomain": "https://8.8.8.8/dns-query",
+  	"RemoteDNSIP": "8.8.8.8",
+  	"DomesticDNSType": "DoH",
+  	"DomesticDNSDomain": "https://77.88.8.8/dns-query",
+  	"DomesticDNSIP": "77.88.8.8",
+  	"Geoipurl": "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geoip.dat",
+  	"Geositeurl": "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geosite.dat",
+  	"RouteOrder": "block-proxy-direct",
+  	"DirectSites": [
+    	"geosite:ru-available-only-inside",
+		"geosite:category-ru",
+		"domain:ozon.ru",
+		"domain:www.ozon.ru",
+		"domain:cdn1.ozonusercontent.com",
+		"domain:ir-3.ozone.ru",
+		"domain:xapi.ozon.ru",
+  		"domain:st.ozone.ru",
+		"domain:.ru",
+		"domain:.su",
+		"domain:.рф"
+  	],
+  	"DirectIp": [
+    	"geoip:private",
+		"geoip:ru"
+  	],
+  	"ProxySites": [
+    	"geosite:epicgames",
+		"domain:api.epicgames.dev",
+		"geosite:telegram",
+		"geosite:google",
+		"geosite:youtube"
+  	],
+  	"ProxyIp": [
+		"geoip:telegram",
+		"geoip:google"
+	],
+  	"BlockSites": [
+    	"geosite:category-ads-all",
+		"geosite:win-spy",
+		"domain:dem-gold.ru"
+  	],
+  	"BlockIp": [],
+  	"DomainStrategy": "IPIfNonMatch",
+  	"FakeDNS": "false"
+}

@@ -2,14 +2,14 @@
 	"Name": "AutoRouting",
   	"GlobalProxy": "true",
   	"UseChunkFiles": "true",
-  	"RemoteDns": "8.8.8.8",
-  	"DomesticDns": "77.88.8.8",
+  	"RemoteDns": "1.1.1.2",
+  	"DomesticDns": "77.88.8.88",
   	"RemoteDNSType": "DoH",
-  	"RemoteDNSDomain": "https://8.8.8.8/dns-query",
-  	"RemoteDNSIP": "8.8.8.8",
+  	"RemoteDNSDomain": "https://security.cloudflare-dns.com/dns-query",
+  	"RemoteDNSIP": "1.1.1.2",
   	"DomesticDNSType": "DoH",
-  	"DomesticDNSDomain": "https://77.88.8.8/dns-query",
-  	"DomesticDNSIP": "77.88.8.8",
+  	"DomesticDNSDomain": "https://safe.dot.dns.yandex.net/dns-query",
+  	"DomesticDNSIP": "77.88.8.88",
   	"Geoipurl": "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geoip.dat",
   	"Geositeurl": "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geosite.dat",
   	"RouteOrder": "block-proxy-direct",
@@ -28,23 +28,36 @@
   	],
   	"DirectIp": [
     	"geoip:private",
-		"geoip:ru"
+		"geoip:ru",
+		"geoip:ru-whitelist"
   	],
   	"ProxySites": [
     	"geosite:epicgames",
 		"domain:api.epicgames.dev",
 		"geosite:telegram",
 		"geosite:google",
-		"geosite:youtube"
+		"geosite:youtube",
+		"geosite:instagram",
+		"geosite:tiktok",
+		"geosite:discord",
+		"geosite:github"
   	],
   	"ProxyIp": [
 		"geoip:telegram",
-		"geoip:google"
+		"geoip:google",
+		"geoip:github"
 	],
   	"BlockSites": [
     	"geosite:category-ads-all",
 		"geosite:win-spy",
-		"domain:dem-gold.ru"
+		"domain:dem-gold.ru",
+		"domain:mc.yango.com",
+		"domain:yandexmetrica.com",
+		"domain:startup.mobile.yandex.net",
+		"domain:metrika.yandex.ru",
+		"domain:metrika.yandex.com",
+		"domain:mc.webvisor.com",
+		"domain:mc.webvisor.org"
   	],
   	"BlockIp": [],
   	"DomainStrategy": "IPIfNonMatch",

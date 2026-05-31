@@ -45,7 +45,6 @@
   	"ProxyIp": [
 		"geoip:telegram",
 		"geoip:google",
-		"geoip:github"
 	],
   	"BlockSites": [
     	"geosite:category-ads-all",

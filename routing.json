@@ -42,12 +42,18 @@
 		"domain:static.yota.ru",
 		"domain:archive.yota.ru",
 		"geosite:vk",
-		"geosite:mailru"
+		"geosite:mailru",
+		"geosite:2gis"
   	],
   	"DirectIp": [
     	"geoip:private",
 		"geoip:ru",
-		"geoip:ru-whitelist"
+		"geoip:ru-whitelist",
+		"10.0.0.0/8",
+		"172.16.0.0/12",
+		"192.168.0.0/16",
+		"224.0.0.0/4",
+		"255.255.255.255/32"
   	],
   	"ProxySites": [
     	"geosite:epicgames",

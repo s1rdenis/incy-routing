@@ -12,6 +12,7 @@
   	"DomesticDNSIP": "77.88.8.88",
   	"Geoipurl": "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geoip.dat",
   	"Geositeurl": "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geosite.dat",
+	"DnsHosts": {},
   	"RouteOrder": "block-proxy-direct",
   	"DirectSites": [
     	"geosite:ru-available-only-inside",
@@ -41,9 +42,17 @@
 		"domain:www.yota.ru",
 		"domain:static.yota.ru",
 		"domain:archive.yota.ru",
+		"domain:mapi.yota.ru",
+		"domain:webmode.yota.ru",
 		"geosite:vk",
 		"geosite:mailru",
-		"geosite:2gis"
+		"geosite:2gis",
+		"domain:na-avtobus.ru",
+		"domain:smartcaptcha.yandexcloud.net",
+		"domain:yastatic.net",
+		"domain:sockets.na-avtobus.com",
+		"domain:appgate.na-avtobus.com",
+		"domain:analytics.na-avtobus.com" 
   	],
   	"DirectIp": [
     	"geoip:private",
@@ -53,7 +62,8 @@
 		"172.16.0.0/12",
 		"192.168.0.0/16",
 		"224.0.0.0/4",
-		"255.255.255.255/32"
+		"255.255.255.255/32",
+		"142.251.1.95"
   	],
   	"ProxySites": [
     	"geosite:epicgames",
@@ -65,7 +75,8 @@
 		"geosite:tiktok",
 		"geosite:discord",
 		"geosite:github",
-		"geosite:habr"
+		"geosite:habr",
+		"domain:ntc.party"
   	],
   	"ProxyIp": [
 		"geoip:telegram",
